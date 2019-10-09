@@ -1,0 +1,41 @@
+# A simple recipt program that we started outlining in an introduction to python course. I pushed it a little further than what we had
+# outlined then decided to go ahead and program it for practice.
+
+dictPricelist = {'apple':4.00, }
+totalList = []
+itemName = ""
+transactionList = []
+while itemName != 'end':
+    itemName = input('Item name (end to stop): ')
+
+    if itemName in dictPricelist:
+        itemQuant = input("Enter number of items: ")
+        itemCost = dictPricelist[itemName]
+        itemTotal = int(itemQuant) * float(itemCost)
+        totalList.append(itemTotal)
+        transactionList.append(itemName + " " + itemQuant + " : " + str(itemTotal))
+
+
+
+    elif itemName != 'end':
+        newItem = input('Item not found. Add now? y/n ')
+
+        if newItem == "y":
+            itemCost = input("Enter the cost of the item: ")
+            dictPricelist[itemName] = itemCost
+            itemQuant = input("Enter number of items: ")
+            itemTotal = int(itemQuant) * float(itemCost)
+            totalList.append(itemTotal)
+            transactionList.append(itemName + " " + itemQuant + " : " + str(itemTotal))
+
+        elif newItem != 'n':
+            print("invalid input")
+
+print("\n\n")
+for x in range(len(transactionList)):
+    print(transactionList[x])
+
+tax = sum(totalList) * .6
+print("\nSUBTOTAL: $" + str(sum(totalList)))
+print("TAX: $" + str(tax))
+print("TOTAL: $" + str((sum(totalList) + tax)))
