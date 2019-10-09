@@ -1,5 +1,5 @@
 # 100 Days Of Code - Log
 
-### Day 0: February 16, 2019
+### Day 1: October 9th 2019
 
-**Today's Progress**: Hello there! Made the decision to commit to the 100 days of code! I'm a computer science student who has been working to learn Python. My plan for this next 100 days is to start working through some coding challenges. I'm starting this at a fairly beginner level of knowledge. My hope is that by the end I'll have a decent grasp of the python language and be ready to tackle some personal projects I'd like to code.
+# Uploaded a very simple recipt program that I was practicing on. In class we outlined the very basic idea of a recipt program using a flow chart. I decided to push it a little further and have the program track and store the user input in a dictionary. I also continued the transaction until the user inputs 'end' (our flow chart only accounted for a set amount of transactions). Then I decided to code the program for practice. All in all it is a very simple start but one I'm glad I've made. In the future I'd like to revisit this simple idea while learning about databases and how to implement a gui. 
